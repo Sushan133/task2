@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: rgb(246, 227, 227);
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(207, 79, 79);
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    padding-left: 3%;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; 
+   font-size: larger;
+    padding-right: 3%;
+    color: white;
+    font-weight: bold;
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.menu a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* underline thickness */
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in;
+}
+.menu a:hover::after{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.button{
+    padding-right: 5%;
+    
+}
+.button button{
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    font-size: large;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.button button:hover{
+    background-color: black;
+    color: white;   
+    transition: 0.8s ease-in-out;
+}
+.div{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10%;
+    
+    
+}
+.ronaldo{
+    width: 350px;
+    /* border: 1px solid black; */
+    box-shadow: 0 8px 16px rgb(205, 204, 204);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.ronaldo img{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px 10px 0 0;
+}
+.text{
+    width: 350px;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+.messi{
+    width: 350px;
+    /* border: 1px solid black; */
+    box-shadow: 0 8px 16px rgb(205, 204, 204);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.messi img{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px 10px 0 0;
+}
+.messi:hover{
+    transform: translate(2px,3px);
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 8px 16px rgb(122, 122, 122);
+}
+.ronaldo:hover{
+    transform: translate(2px,3px);
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 8px 16px rgb(122, 122, 122);
+}
